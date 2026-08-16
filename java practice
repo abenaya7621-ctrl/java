@@ -185,3 +185,25 @@ public class evennorev {
         }
     }
 }
+
+even odd sum
+import java.util.Scanner;
+
+public class evenoddsum {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int evencount = 0, oddcount = 0;
+        while (n > 0) {
+            int digit = n % 10;
+            if (digit % 2 == 0) {
+                evencount=evencount+digit;
+            } else {
+                oddcount=oddcount+digit;
+            }
+            n=n/10;
+        }
+        System.out.println("evencount="+evencount);
+        System.out.println("oddcount="+oddcount);
+    }
+}
