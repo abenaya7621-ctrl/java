@@ -137,3 +137,32 @@ public class anagram {
     }
 }
 
+amstrong
+import java.util.Scanner;
+
+public class armstrong {
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int copy=n;
+        int sn=n;
+        int sum=0;
+        int count=0;
+        while(n!=0){
+            int digit=n%10;
+            count++;
+            n=n/10;
+        }
+        while(sn!=0){
+            int digit=sn%10;
+               sum=(int)Math.pow(digit,count)+sum;
+               sn=sn/10;
+        }
+        if(sum==copy){
+            System.out.println("armstrong no");
+        }
+        else{
+            System.out.println("not armstrong");
+        }
+    }
+}
