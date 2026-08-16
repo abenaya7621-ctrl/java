@@ -222,3 +222,20 @@ public class factorial {
     }
 }
 
+fibonacci
+import java.util.Scanner;
+
+public class fib {
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        int n,f=0,s=1,t;
+
+        System.out.print(f+""+s);
+        for(int i=1;i<=8;i++){
+            t=f+s;
+            System.out.println(t);
+            f=s;
+            s=t;
+        }
+    }
+}
