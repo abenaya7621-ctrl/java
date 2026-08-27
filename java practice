@@ -269,8 +269,7 @@ public class MultiplicationTable {
     }
 }
 
-
-// 15. Print pattern (right triangle of stars) 
+Print pattern (right triangle of stars) 
 import java.util.Scanner;
 
 public class StarPattern {
@@ -315,3 +314,21 @@ public class Palindrome {
     }
 }
 
+
+sum of digits
+import java.util.Scanner;
+public class SumOfDigits {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();          // input number
+        int sum = 0;
+
+        while(n > 0) {
+            int digit = n % 10;        // extract last digit
+            sum = sum + digit;         // add digit to sum
+            n = n / 10;                // remove last digit
+        }
+
+        System.out.println("Sum of digits = " + sum);
+    }
+}
