@@ -332,3 +332,18 @@ public class SumOfDigits {
         System.out.println("Sum of digits = " + sum);
     }
 }
+
+smallest digit
+int n = sc.nextInt();
+int min = 9;
+
+while(n > 0) {
+    int d = n % 10;
+
+    if(d < min)
+        min = d;
+
+    n /= 10;
+}
+
+System.out.println(min);
